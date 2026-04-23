@@ -25,7 +25,7 @@
 				inputs',
 				...
 			}: let
-				toolchain = inputs'.fenix.packages.minimal.toolchain;
+				toolchain = inputs'.fenix.packages.complete.toolchain;
 				platform =
 					pkgs.makeRustPlatform {
 						cargo = toolchain;
