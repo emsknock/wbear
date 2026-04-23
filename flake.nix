@@ -37,6 +37,7 @@
 						version = "1.0.0";
 						src = ./.;
 						cargoLock.lockFile = ./Cargo.lock;
+						meta.mainProgram = "wbear";
 					};
 			in {
 				devShells.default = pkgs.mkShell {packages = [toolchain];};
