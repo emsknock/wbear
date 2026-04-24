@@ -1,7 +1,7 @@
 use rand::seq::IndexedRandom;
 use wbear_macro::include_quotelist;
 
-const QUOTES: [&str; 523] = include_quotelist!(include_str!("./quotes.txt"));
+const QUOTES: [&str; 556] = include_quotelist!(include_str!("./quotes.txt"));
 
 fn main() {
     let pick = QUOTES
