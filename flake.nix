@@ -1,5 +1,5 @@
 {
-	description = "A wee bear who has something to say";
+	description = "A wee bear who has things to say";
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -21,11 +21,10 @@
 
 			perSystem = {
 				pkgs,
-				shuf,
 				inputs',
 				...
 			}: let
-				toolchain = inputs'.fenix.packages.complete.toolchain;
+				inherit (inputs'.fenix.packages.complete) toolchain;
 				platform =
 					pkgs.makeRustPlatform {
 						cargo = toolchain;
